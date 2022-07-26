@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap');
+
+/* Bleu foncé:  rgb(80, 32, 80)
+Bleu clair:  rgb(224, 232, 255) */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'League Spartan', sans-serif;
+    background-image: url('Images/Wave.svg'), linear-gradient(
+        to bottom, 
+        #d6e1ff 0%, 
+        #d6e1ff 65%, 
+        rgb(224, 232, 255) 65%, 
+        rgb(224, 232, 255) 100%);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+#card-element {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#header-img {
+    filter:hue-rotate()
+}
+
+h1, h2, p {
+    margin: 10px;
+}
+
+h1, h2 {
+    color: #111e41;
+}
+
+#summary-title {
+    margin-top: 50px;
+}
+
+#summary-desc {
+    color: rgb(0, 0, 0);
+    opacity: 50%;
+    width: 275px;
+}
+
+#plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f8f9fe;
+    width: 350px;
+    height: 100px;
+    border-radius: 15px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+#plan h2 {
+    font-size: 17px;
+}
+
+#plan p {
+    color: rgb(0, 0, 0);
+    opacity: 50%;
+}
+
+#annual-plan {
+    position:relative;
+    right: 35px;
+    text-align: left;
+}
+
+#plan-change-btn {
+    color: rgb(80, 32, 80);
+    font-weight: 600;
+}
+
+#button-proceed {
+    background-color: rgb(80, 32, 80);
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.2)
+}
+
+#button-proceed p {
+    color: #FFF;
+    text-decoration: none;
+    font-weight:700;
+}
+
+#proceed-link {
+    text-decoration: none;
+}
+
+#cancel-txt {
+    margin: 40px;
+
+}
+
+#cancel-btn {
+    text-decoration: none;
+    color: rgb(80, 32, 80);
+    font-weight: 600;
+    margin: 30px;
+    opacity: 80%;
+}
+
